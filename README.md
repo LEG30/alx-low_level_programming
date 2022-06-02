@@ -1,1 +1,1 @@
-Building steps in c program
+Building guide into c programming

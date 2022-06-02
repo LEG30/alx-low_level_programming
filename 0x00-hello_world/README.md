@@ -1,1 +1,1 @@
-Project in c programming mode
+Project in program c
