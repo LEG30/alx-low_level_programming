@@ -1,1 +1,1 @@
-Building guide into c programming
+Project is building steps in c
