@@ -1,1 +1,1 @@
-Project is building steps in c
+Program building code in c mode
