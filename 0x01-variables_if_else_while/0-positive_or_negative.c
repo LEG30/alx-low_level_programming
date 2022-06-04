@@ -1,19 +1,19 @@
 #include <stdio.h>
 
-int main() 
+int main(void) 
 {
-	int n;
+    int n;
 
-	 printf("Enter random number to the variable n: ");
-	 scanf("%d", &n);
+     printf("Enter the number n: ");
+      scanf("%d", &n);
+     
+      if (n > 0)
+	  printf("%d is positive\n", n);
+       else if (n < 0)
+	   printf("%d is negative\n", n);
+       else if (n == 0) 
+	   printf("%d is zero\n", n);
 
-	  if (n > 0) 
-		   printf("%d is positive.", n);
-	  else if (n < 0) 
-		   printf("%d is negative.", n);
-	  else if (n == 0) 
-		  printf("%d is zero.", n);
-
-	  return 0;
+        return (0);
 }
 
