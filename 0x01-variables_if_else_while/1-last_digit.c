@@ -1,31 +1,18 @@
-#include <stdlib.h>
-#include <time.h>
 #include <stdio.h>
-/**
- * Description: main - Prints out a string to stdout.
- * Result: 0 if success.
- */
-int n;
+int main()
 {
-char last[] = "last Digit of";
+	int n;lastDigit;
+	printf("Enter the number n: ");
+	scanf("%d", &n);
 
-srand(time(0));
-n = rand() - RAND_MAX / 2;
-printf("%s %d is %d and is ", last, n, n % 10);
-if (n % 10 > 5) 
-{
-printf("greater than 5\n");
-}
-else if (n % 10 == 0) 
-{
-printf("0\n");
-}
-else
-{
-printf("less than 6 and not 0\n");
-}
-return (0);
+	if (n > 5) 
+		printf("and is greater than 5\n");
+	else if ((n == 0) 
+		printf("and is 0\n");
+       else
+                printf("and is less than 6 and not 0\n");
 
-}
-
+	// find last digit of a number
+	lastDigit = n % 10;
+	}
 
