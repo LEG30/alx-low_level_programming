@@ -1,33 +1,28 @@
-#include <stdlib.h>
+//C program to print the last digit of the number stored in variable n
 #include <stdio.h>
-#include <time.h>
+int main(void) {
+	int num, digit;
 
-/**
- * main - Entry point
- *
- * Return: Always 0 (success) 
- */
+	// Asking for input
+	printf("Enter the digit: ");
+	scanf("%d", &num);
 
-int main(void) 
-{
-	int n;
-
-	srand(time(0));
-
-	n = rand - RAND_MAX / 2;
-
-	if ((n % 10) > 5)
+	digit = num % 10;
+	if (digit > 5)
 	{
-		printf("last digit of %d is %d and is greater than 5\n", n, (n % 10));
+         printf("digit of %d is %d and is greater than 5\n", n, digit);
 	}
-	else if ((n % 10) == 0) 
+	else if (digit < 6 && digit != 0) 
 	{
-		printf("last digit of %d is %d and is 0\", n, (n % 10));
-	} 
-	else 
-		printf("last digit of %d is %d and is less than 6 and not 0\n", n, (n % 10));
-
+	printf("digit of %d is %d and is less than 6 and not 0\n", n, digit);
+        } 
+        else (digit == 0) 
+	{
+	 printf("digit of %d is %d and is 0\n", n, digit);
+        } 
+        // Displaying output
+	printf("digit of %d is: %d", num, digit);
+        
 	return (0);
 }
-
 
